@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실전 빠른 참고 — AI 하네스 엔지니어링</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== 상단 네비게이션 바 ===== -->
+  <nav class="top-nav">
+    <a href="index.html" class="top-nav__home">
+      <span class="top-nav__home-arrow">←</span>
+      <span>홈</span>
+    </a>
+    <div class="top-nav__sep"></div>
+    <div class="top-nav__episodes">
+      <a href="ep1.html" class="top-nav__ep"><span class="top-nav__ep-num">1</span><span>하네스란?</span></a>
+      <a href="ep2.html" class="top-nav__ep"><span class="top-nav__ep-num">2</span><span>고삐</span></a>
+      <a href="ep3.html" class="top-nav__ep"><span class="top-nav__ep-num">3</span><span>자동 준비</span></a>
+      <a href="ep4.html" class="top-nav__ep"><span class="top-nav__ep-num">4</span><span>경로</span></a>
+      <a href="ep5.html" class="top-nav__ep"><span class="top-nav__ep-num">5</span><span>전문 마부</span></a>
+      <a href="ep6.html" class="top-nav__ep"><span class="top-nav__ep-num">6</span><span>통합</span></a>
+      <a href="ep7.html" class="top-nav__ep"><span class="top-nav__ep-num">7</span><span>시작하기</span></a>
+      <div class="top-nav__sep"></div>
+      <a href="cheatsheet.html" class="top-nav__ep top-nav__ep--cheat top-nav__ep--current"><span>📋</span><span>빠른 참고</span></a>
+    </div>
+  </nav>
+
+  <!-- ===== 키보드 힌트 ===== -->
+  <div class="keyboard-hint">
+    <span class="kbd">←</span><span class="kbd">→</span> 키로 이동
+  </div>
+
+  <!-- ===== 사이드 네비게이션 ===== -->
+  <nav class="progress-nav" aria-label="섹션 네비게이션">
+    <a href="#cheat-title" class="nav-dot active" data-label="시작"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#cheat-evidence" class="nav-dot" data-label="실전 증거"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#cheat-mistakes" class="nav-dot" data-label="실수"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#cheat-tips" class="nav-dot" data-label="꿀팁"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#cheat-remember" class="nav-dot" data-label="핵심"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#cheat-links" class="nav-dot" data-label="참고"><span></span></a>
+  </nav>
+
+  <!-- ===== 타이틀 ===== -->
+  <section class="ep-title bg-butter" id="cheat-title">
+    <div data-animate>
+      <div class="ep-title__num">📋 실전 레퍼런스</div>
+      <h2 class="ep-title__heading">빠른 참고</h2>
+      <p style="color: var(--text-secondary); font-size: 1.1rem; margin-top: 8px;">
+        직접 만들 필요 없어요. AI에게 만들어달라고 하세요.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== 씬 1: 실전 증거 ===== -->
+  <section class="scene scene--center bg-white" id="cheat-evidence">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>실전 증거: 프롬프트 4개로 이만큼 나왔어요</h3>
+      <div class="step-flow" data-stagger>
+        <div class="step-card">
+          <div class="step-card__num">1</div>
+          <div class="step-card__content">
+            <div class="step-card__title">"문서를 읽고 프로세스를 기획해줘"</div>
+            <div class="step-card__desc">→ 5가지 방식 비교표 + 3단계 도입안</div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">2</div>
+          <div class="step-card__content">
+            <div class="step-card__title">"md문서로 만들어주세요"</div>
+            <div class="step-card__desc">→ 기획서 문서 1개 (231줄)</div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">3</div>
+          <div class="step-card__content">
+            <div class="step-card__title">"에이전트, 스킬, 훅을 설계해줘"</div>
+            <div class="step-card__desc">→ 스킬 5개 + 에이전트 3개 + 훅 3개</div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">4</div>
+          <div class="step-card__content">
+            <div class="step-card__title">"이 과정을 교육자료로"</div>
+            <div class="step-card__desc">→ 교육 가이드 문서</div>
+          </div>
+        </div>
+      </div>
+      <div class="definition-box" data-animate style="margin-top: 32px;">
+        <h3 style="font-size: 1.4rem;">프롬프트 4개. 타이핑 5분.</h3>
+        <p>결과물: <strong>설계 문서 3개 + 실행 도구 11개</strong></p>
+      </div>
+      <div class="tip-box" data-animate style="margin-top: 24px;">
+        <div class="tip-box__title">🌍 실제 기업들의 숫자</div>
+        <strong>Klarna</strong> — 전 직원 87~90%가 매일 AI 사용, 연간 $40M+ 절감<br>
+        <strong>GitHub Copilot</strong> — 작업 완료 속도 약 55% 향상<br>
+        <strong>한국 기업</strong> — 2025년 AI 교육 투자 1위 영역 (33.7%)<br><br>
+        이 숫자들의 공통점: <strong>AI를 "잘 세팅해서" 쓴 조직</strong>의 결과예요.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 2: 자주 하는 실수 3가지 ===== -->
+  <section class="scene scene--cards bg-butter" id="cheat-mistakes">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>자주 하는 실수 3가지</h3>
+      <div class="card-grid card-grid--single" data-stagger>
+        <div class="mistake-card">
+          <div class="mistake-card__problem">"AI가 규칙서를 안 따라요"</div>
+          <div class="mistake-card__solution">
+            파일 위치를 확인하세요. 프로젝트 최상위 <strong>CLAUDE.md</strong> 또는 <strong>.claude/CLAUDE.md</strong>에 있어야 해요.
+          </div>
+        </div>
+        <div class="mistake-card">
+          <div class="mistake-card__problem">"한 번에 다 만들려고 해요"</div>
+          <div class="mistake-card__solution">
+            Step 1 규칙서부터 시작하세요. 잘 되면 Step 2로. 실전 사례도 프롬프트 4개를 <strong>순서대로</strong> 입력했어요.
+          </div>
+        </div>
+        <div class="mistake-card">
+          <div class="mistake-card__problem">"프롬프트를 뭐라고 쓸지 모르겠어요"</div>
+          <div class="mistake-card__solution">
+            각 편의 실전 프롬프트를 <strong>그대로 복사</strong>하세요. Step 1은 [대괄호]만 바꾸면 되고, Step 2~4는 프롬프트 자체를 그대로 쓰면 돼요.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 3: 꿀팁 ===== -->
+  <section class="scene scene--center bg-white" id="cheat-tips">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>꿀팁</h3>
+
+      <!-- 팁 1 -->
+      <div class="quote-card" data-animate style="margin-bottom: 32px;">
+        <h3 class="quote-card__title">팁 1: 기획서가 나오면 바로 실행하지 마세요</h3>
+        <div class="step-flow" style="text-align: left; margin-top: 20px;">
+          <div class="step-card">
+            <div class="step-card__num">1</div>
+            <div class="step-card__content">
+              <div class="step-card__title">Plan 모드에서 기획</div>
+              <div class="step-card__desc">AI가 기획서를 만들어줌</div>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num">2</div>
+            <div class="step-card__content">
+              <div class="step-card__title">"위 기획서를 md문서로 저장해주세요"</div>
+              <div class="step-card__desc">파일로 남기기</div>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num">3</div>
+            <div class="step-card__content">
+              <div class="step-card__title">"저장된 문서를 보고 진행해주세요"</div>
+              <div class="step-card__desc">문서 기반으로 실행</div>
+            </div>
+          </div>
+        </div>
+        <div class="tip-box" style="margin-top: 16px;">
+          <div class="tip-box__title">왜 이렇게 하나요?</div>
+          <strong>할루시네이션 감소</strong> — AI가 기억이 아닌 문서를 보고 작업<br>
+          <strong>중단 후 복귀</strong> — 다음 날 "이 문서 보고 이어서 진행해줘"<br>
+          <strong>히스토리 관리</strong> — 언제 무엇을 기획했는지 기록
+        </div>
+      </div>
+
+      <!-- 팁 2 -->
+      <div class="quote-card" data-animate>
+        <h3 class="quote-card__title">팁 2: 진행 상태를 자동으로 관리하기</h3>
+        <p style="text-align: left;">규칙서(CLAUDE.md)에 이 내용을 추가하세요:</p>
+        <div class="prompt-block" style="text-align: left; margin-top: 16px;">
+일을 여러 에이전트들이 나눠서 할 때,
+어디까지 진행되고 무슨 일을 해야 하는지에 대한
+내용들을 각각 PROGRESS.md와 PLAN.md에서 관리하도록 합시다.
+
+새로 시작할 때 두 파일을 읽어서 내가 무슨 일을 해야 하는지
+에이전트들이 알 수 있게 합시다.
+        </div>
+        <div class="tip-box" style="margin-top: 16px;">
+          <div class="tip-box__title">이걸 추가하면요?</div>
+          <strong>PLAN.md</strong> — AI가 전체 작업 계획을 기록<br>
+          <strong>PROGRESS.md</strong> — AI가 현재 진행 상태를 업데이트<br>
+          다음에 AI를 켜면 두 파일을 먼저 읽고 스스로 파악해요.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 4: 기억할 것 하나 ===== -->
+  <section class="scene scene--center bg-butter" id="cheat-remember">
+    <div class="scene__inner">
+      <div class="finale-message" data-animate="scale">
+        <p>
+          당신이 할 일은<br>
+          <strong>"무엇을 원하는지 설명하는 것"</strong> 뿐이에요.
+        </p>
+        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-top: 16px;">
+          방법을 몰라도 돼요.<br>
+          Plan 모드에서 "이런 걸 하고 싶은데, 방법을 알려줘"라고 물어보세요.<br>
+          AI가 방법을 찾고, 계획을 세우고, 실행까지 해요.<br>
+          확인하고 "진행해줘"라고 말하면 돼요.
+        </p>
+        <p style="margin-top: 24px;">
+          <strong>고삐 하나부터 시작하세요.</strong>
+        </p>
+      </div>
+      <div data-animate style="text-align: center; margin-top: 32px;">
+        <a href="index.html" class="next-teaser">
+          <span class="next-teaser__badge">처음으로</span>
+          <span>← 홈으로 돌아가기</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 5: 더 알아보기 ===== -->
+  <section class="scene scene--center bg-white" id="cheat-links">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>더 알아보기</h3>
+      <p class="text-note" data-animate style="text-align: center; margin-bottom: 24px;">
+        이 시리즈는 아래 자료들을 참고하여 제작되었어요.<br>
+        깊이 있는 학습을 원하시면 확인해보세요.
+      </p>
+      <div class="card-grid card-grid--single" data-stagger>
+        <div class="element-card">
+          <div class="element-card__name">Mitchell Hashimoto — "My AI Adoption Journey"</div>
+          <div class="element-card__desc">"하네스 엔지니어링"이라는 이름이 처음 나온 글. AI 도입 5단계를 실제 경험으로 설명해요.</div>
+          <div class="element-card__metaphor">mitchellh.com</div>
+        </div>
+        <div class="element-card">
+          <div class="element-card__name">Martin Fowler — "Harness Engineering for Coding Agents"</div>
+          <div class="element-card__desc">소프트웨어 엔지니어링 대가가 정리한 하네스 엔지니어링 해설.</div>
+          <div class="element-card__metaphor">martinfowler.com</div>
+        </div>
+        <div class="element-card">
+          <div class="element-card__name">Claude Code 공식 문서</div>
+          <div class="element-card__desc">CLAUDE.md, Hooks, Skills, Agents의 공식 사용법과 최신 업데이트.</div>
+          <div class="element-card__metaphor">code.claude.com/docs</div>
+        </div>
+        <div class="element-card">
+          <div class="element-card__name">토스 테크 블로그 — "Harness를 통한 조직 생산성 높이기"</div>
+          <div class="element-card__desc">한국 기업이 하네스 엔지니어링을 팀 단위로 적용한 실제 사례.</div>
+          <div class="element-card__metaphor">toss.tech</div>
+        </div>
+      </div>
+      <div class="quote-card" data-animate style="margin-top: 32px;">
+        <p style="font-size: 1rem;">
+          이 프레젠테이션의 기획, 디자인, 코드 모두<br>
+          <strong>Claude Code와 대화하며 만들었어요.</strong>
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 8px;">
+          "이런 교육 자료를 만들어줘"라고 말했을 뿐이에요.<br>
+          하네스를 갖추면 이런 결과물도 나올 수 있어요.
+        </p>
+      </div>
+      <p class="text-note" data-animate style="text-align: center; margin-top: 16px; font-size: 0.8rem;">
+        AI Productivity Team
+      </p>
+    </div>
+  </section>
+
+  <script src="js/scroll.js"></script>
+</body>
+</html>

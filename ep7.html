@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7편: 고삐 하나부터 시작하세요 — AI 하네스 엔지니어링</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== 상단 네비게이션 바 ===== -->
+  <nav class="top-nav">
+    <a href="index.html" class="top-nav__home">
+      <span class="top-nav__home-arrow">←</span>
+      <span>홈</span>
+    </a>
+    <div class="top-nav__sep"></div>
+    <div class="top-nav__episodes">
+      <a href="ep1.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">1</span>
+        <span>하네스란?</span>
+      </a>
+      <a href="ep2.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">2</span>
+        <span>고삐</span>
+      </a>
+      <a href="ep3.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">3</span>
+        <span>자동 준비</span>
+      </a>
+      <a href="ep4.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">4</span>
+        <span>경로</span>
+      </a>
+      <a href="ep5.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">5</span>
+        <span>전문 마부</span>
+      </a>
+      <a href="ep6.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">6</span>
+        <span>통합</span>
+      </a>
+      <a href="ep7.html" class="top-nav__ep top-nav__ep--current">
+        <span class="top-nav__ep-num">7</span>
+        <span>시작하기</span>
+      </a>
+      <div class="top-nav__sep"></div>
+      <a href="cheatsheet.html" class="top-nav__ep top-nav__ep--cheat"><span>📋</span><span>빠른 참고</span></a>
+    </div>
+  </nav>
+
+  <!-- ===== 키보드 힌트 ===== -->
+  <div class="keyboard-hint">
+    <span class="kbd">←</span><span class="kbd">→</span> 키로 이동
+  </div>
+
+  <!-- ===== 사이드 네비게이션 ===== -->
+  <nav class="progress-nav" aria-label="섹션 네비게이션">
+    <a href="#ep7-title" class="nav-dot active" data-label="7편"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep7-intro" class="nav-dot" data-label="도입"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep7-demo" class="nav-dot" data-label="시작"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep7-result" class="nav-dot" data-label="결과"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep7-iterate" class="nav-dot" data-label="성장"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep7-practice" class="nav-dot" data-label="실습"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep7-summary" class="nav-dot" data-label="마무리"><span></span></a>
+  </nav>
+
+  <!-- ===== 7편 제목 ===== -->
+  <section class="ep-title bg-white" id="ep7-title">
+    <div data-animate>
+      <div class="ep-title__num">7편</div>
+      <h2 class="ep-title__heading">고삐 하나부터 시작하세요</h2>
+      <div class="ep-title__progress">
+        <span class="dot filled"></span>
+        <span class="dot filled"></span>
+        <span class="dot filled"></span>
+        <span class="dot filled"></span>
+        <span class="dot filled"></span>
+        <span class="dot filled"></span>
+        <span class="dot filled"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 1: 도입 — 처음부터 다 갖출 필요 없다 ===== -->
+  <section class="scene scene--split bg-peach" id="ep7-intro">
+    <div class="scene__inner">
+      <div class="scene__text" data-animate="fade-right">
+        <p class="scene__lead">
+          지금까지 많은 걸 봤어요.
+        </p>
+        <p>
+          하지만 처음부터<br>
+          마구를 다 갖출 필요는 없어요.
+        </p>
+        <p>
+          말을 다루는 첫걸음은<br>
+          <strong>고삐 하나를 잡는 것</strong>부터예요.
+        </p>
+      </div>
+      <div class="scene__visual" data-animate="fade-left">
+        <div class="illust illust--cool">
+          <div class="illust__inner">
+            <img src="img/ep7-intro.png" alt="고삐 하나부터 시작하는 첫걸음" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 2: 시작 — 규칙 파일 만들기 ===== -->
+  <section class="scene scene--center bg-white" id="ep7-demo">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>고삐 3줄, 지금 바로 만들어볼게요</h3>
+      <div class="step-flow" data-stagger>
+        <div class="step-card">
+          <div class="step-card__num">1</div>
+          <div class="step-card__content">
+            <div class="step-card__title">빈 상태에서 시작</div>
+            <div class="step-card__desc">
+              📂 내 프로젝트<br>
+              (비어있음)
+            </div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">2</div>
+          <div class="step-card__content">
+            <div class="step-card__title">서랍 만들기</div>
+            <div class="step-card__desc">
+              📂 <strong>.claude</strong> 폴더 생성
+            </div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">3</div>
+          <div class="step-card__content">
+            <div class="step-card__title">규칙 3줄 작성</div>
+            <div class="step-card__desc">
+              <div class="rule-display">
+                <div class="rule-display__title">CLAUDE.md</div>
+                <div class="rule-display__list">
+                  <p>한국어로 답변해주세요</p>
+                  <p>초등학생이 이해할 수 있게</p>
+                  <p>비유를 들어서 설명해주세요</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 3: 결과 — 고삐대로 동작하는 AI ===== -->
+  <section class="scene scene--split-reverse bg-peach" id="ep7-result">
+    <div class="scene__inner">
+      <div class="scene__text" data-animate="fade-left">
+        <p class="scene__lead">
+          AI에게 물어봐요:<br>
+          <strong>"인공지능이 뭐야?"</strong>
+        </p>
+        <div class="ai-screen" data-animate>
+          <div class="ai-screen__header">AI 답변</div>
+          <div class="ai-screen__input">
+            인공지능은 마치 <strong>아주 똑똑한 앵무새</strong> 같아요.<br><br>
+            앵무새가 사람 말을 듣고 따라하는 것처럼,<br>
+            인공지능도 엄청나게 많은 글을 읽고<br>
+            사람처럼 대답하는 법을 배운 거예요.
+          </div>
+        </div>
+      </div>
+      <div class="scene__visual" data-animate="fade-right">
+        <div class="quote-card">
+          <p>
+            한국어 ✓<br>
+            쉽게 ✓<br>
+            비유 ✓
+          </p>
+          <p><strong>고삐대로!</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 4: 성장 — 쓰면서 다듬기 ===== -->
+  <section class="scene scene--center bg-white" id="ep7-iterate">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>쓰면서 하나씩 다듬어가요</h3>
+      <div class="timeline" data-stagger>
+        <div class="timeline__item">
+          <div class="timeline__period">1주차</div>
+          <div class="timeline__desc">고삐(CLAUDE.md) 3줄로 시작</div>
+          <div class="timeline__fix">"항상 한국어로 답변" 규칙 추가</div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__period">2주차</div>
+          <div class="timeline__desc">경로(슬래시 커맨드) 1개 만듦</div>
+          <div class="timeline__fix">"보고서는 반드시 이 양식으로" 추가</div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__period">1개월</div>
+          <div class="timeline__desc">고삐(CLAUDE.md) 15줄 + 경로(스킬) 3개 + 전문 마부(에이전트) 2명</div>
+          <div class="timeline__fix">맞춤형 AI 완성</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 5: 실습 — 기대와 다를 때 ===== -->
+  <section class="scene scene--center bg-peach" id="ep7-practice">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>기대와 다르게 동작할 때</h3>
+      <div class="prompt-block" data-animate>
+        <div class="prompt-block__label">프롬프트</div>
+        <p>
+          "나는 [이렇게 원했지만] [다르게 동작하는] 실수가 발생했습니다.<br>
+          CLAUDE.md 업데이트 방법을 알려주세요"
+        </p>
+      </div>
+      <div class="prompt-warning">예시 프롬프트는 정답이 아닙니다. 참고만 해주세요. 상세하게 꼼꼼하게 전달할수록 더 좋은 결과물이 생성됩니다.</div>
+      <div class="prompt-block prompt-block__result" data-animate>
+        <div class="prompt-block__label">결과</div>
+        <p>
+          AI가 규칙 파일 수정 방법을 안내해요.<br>
+          <strong>달리면서 고삐를 조정하는 것</strong>과 같아요.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 6: 마무리 — 시리즈 엔딩 ===== -->
+  <section class="scene scene--center bg-white" id="ep7-summary">
+    <div class="scene__inner">
+      <div class="finale-message" data-animate="scale">
+        <p>
+          고삐 없는 말은 어디로 갈지 모르지만,<br>
+          마구를 채운 말은 <strong>매번 같은 곳</strong>으로 가요.
+        </p>
+        <p>
+          <strong>고삐 하나부터 시작해 보세요.</strong>
+        </p>
+      </div>
+      <div data-animate style="text-align: center; margin-top: 2rem;">
+        <a href="cheatsheet.html" class="next-teaser" style="background: var(--butter-light);">
+          <span class="next-teaser__badge">다음 단계</span>
+          <span>📋 실전 빠른 참고 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/scroll.js"></script>
+</body>
+</html>

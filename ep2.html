@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2편: 고삐 하나면 달라져요 — AI 하네스 엔지니어링</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== 상단 네비게이션 바 ===== -->
+  <nav class="top-nav">
+    <a href="index.html" class="top-nav__home">
+      <span class="top-nav__home-arrow">←</span>
+      <span>홈</span>
+    </a>
+    <div class="top-nav__sep"></div>
+    <div class="top-nav__episodes">
+      <a href="ep1.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">1</span>
+        <span>하네스란?</span>
+      </a>
+      <a href="ep2.html" class="top-nav__ep top-nav__ep--current">
+        <span class="top-nav__ep-num">2</span>
+        <span>고삐</span>
+      </a>
+      <a href="ep3.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">3</span>
+        <span>자동 준비</span>
+      </a>
+      <a href="ep4.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">4</span>
+        <span>경로</span>
+      </a>
+      <a href="ep5.html" class="top-nav__ep top-nav__ep">
+        <span class="top-nav__ep-num">5</span>
+        <span>전문 마부</span>
+      </a>
+      <a href="ep6.html" class="top-nav__ep top-nav__ep">
+        <span class="top-nav__ep-num">6</span>
+        <span>통합</span>
+      </a>
+      <a href="ep7.html" class="top-nav__ep top-nav__ep">
+        <span class="top-nav__ep-num">7</span>
+        <span>시작하기</span>
+      </a>
+      <div class="top-nav__sep"></div>
+      <a href="cheatsheet.html" class="top-nav__ep top-nav__ep--cheat"><span>📋</span><span>빠른 참고</span></a>
+    </div>
+  </nav>
+
+  <!-- ===== 키보드 힌트 ===== -->
+  <div class="keyboard-hint">
+    <span class="kbd">←</span><span class="kbd">→</span> 키로 이동
+  </div>
+
+  <!-- ===== 사이드 네비게이션 ===== -->
+  <nav class="progress-nav" aria-label="섹션 네비게이션">
+    <a href="#ep2-title" class="nav-dot active" data-label="2편"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep2-intro" class="nav-dot" data-label="도입"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep2-concept" class="nav-dot" data-label="개념"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep2-demo" class="nav-dot" data-label="시연"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep2-practice" class="nav-dot" data-label="실전"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep2-summary" class="nav-dot" data-label="정리"><span></span></a>
+  </nav>
+
+  <!-- ===== 2편 제목 ===== -->
+  <section class="ep-title bg-peach" id="ep2-title">
+    <div data-animate>
+      <div class="ep-title__num">2편</div>
+      <h2 class="ep-title__heading">고삐 하나면 달라져요</h2>
+      <div class="ep-title__progress">
+        <span class="dot"></span>
+        <span class="dot filled"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 1: 도입 — 마케팅팀 문제 ===== -->
+  <section class="scene scene--split bg-peach" id="ep2-intro">
+    <div class="scene__inner">
+      <div class="scene__text" data-animate="fade-right">
+        <p class="scene__lead">
+          마케팅팀이 AI에게 광고 문구를 요청했어요.
+        </p>
+        <p>
+          어제는 3개를 알려줬는데, 오늘은 5개.<br>
+          형식도 매번 달라서 <strong>그대로 쓸 수가 없었어요.</strong>
+        </p>
+        <div class="scene__detail">
+          <p>월요일: 번호 없이 줄글로</p>
+          <p>화요일: 번호 매기고 설명까지</p>
+          <p>수요일: 갑자기 영어 섞어서</p>
+        </div>
+        <p class="scene__punchline">
+          AI는 같은 질문에도 매번 다른 답을 해요.<br>
+          <strong>고삐 없는 말과 같아요.</strong>
+        </p>
+      </div>
+      <div class="scene__visual" data-animate="fade-left">
+        <div class="illust illust--warm">
+          <div class="illust__inner">
+            <img src="img/ep2-intro.png" alt="매번 다른 AI 답변에 당황하는 마케팅팀" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 2: 개념 — 고삐 설정표 ===== -->
+  <section class="scene scene--split-reverse bg-cream" id="ep2-concept">
+    <div class="scene__inner">
+      <div class="scene__visual" data-animate="fade-right">
+        <div class="illust illust--cool">
+          <div class="illust__inner">
+            <img src="img/ep2-concept.png" alt="고삐를 잡고 같은 방향으로 달리는 마부들" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="scene__text" data-animate="fade-left">
+        <p class="scene__lead">
+          마구간 벽에 <strong>설정표</strong>를 걸어두면<br>
+          누가 말을 몰아도 같은 방향으로 가요.
+        </p>
+        <div class="rule-display">
+          <div class="rule-display__title">🪢 고삐 설정표</div>
+          <ul class="rule-display__list">
+            <li>방향은 항상 <strong>동쪽</strong></li>
+            <li>속도는 <strong>보통 걸음</strong></li>
+            <li>갈림길에서는 <strong>오른쪽</strong></li>
+            <li>쉬는 곳은 <strong>2시간마다</strong></li>
+          </ul>
+        </div>
+        <p>
+          AI에게도 이런 설정표를 만들어주면,<br>
+          <strong>매번 같은 품질의 답</strong>이 나와요.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 3: 시연 — 규칙서와 결과 ===== -->
+  <section class="scene scene--cards bg-white" id="ep2-demo">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>규칙서를 만들면 이렇게 돼요</h3>
+      <div class="card-grid" data-stagger>
+        <div class="rule-display">
+          <div class="rule-display__title">📋 AI의 규칙서</div>
+          <ul class="rule-display__list">
+            <li>항상 <strong>한국어</strong>로 답변</li>
+            <li>전문 용어 대신 <strong>쉬운 말</strong></li>
+            <li>방법은 항상 <strong>3가지</strong>로</li>
+            <li>결과는 <strong>표</strong>로 정리</li>
+          </ul>
+        </div>
+        <div class="ai-screen">
+          <div class="ai-screen__header">AI 답변</div>
+          <div class="ai-screen__body">
+            <table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+              <tr style="border-bottom:1px solid #eee;">
+                <th style="text-align:left; padding:0.5rem;">방법</th>
+                <th style="text-align:left; padding:0.5rem;">설명</th>
+                <th style="text-align:left; padding:0.5rem;">난이도</th>
+              </tr>
+              <tr style="border-bottom:1px solid #eee;">
+                <td style="padding:0.5rem;">직접 작성</td>
+                <td style="padding:0.5rem;">팀에서 바로 쓸 수 있는 문구</td>
+                <td style="padding:0.5rem;">쉬움</td>
+              </tr>
+              <tr style="border-bottom:1px solid #eee;">
+                <td style="padding:0.5rem;">템플릿 활용</td>
+                <td style="padding:0.5rem;">기존 양식에 맞춰 생성</td>
+                <td style="padding:0.5rem;">보통</td>
+              </tr>
+              <tr>
+                <td style="padding:0.5rem;">A/B 비교</td>
+                <td style="padding:0.5rem;">두 가지 버전을 함께 제시</td>
+                <td style="padding:0.5rem;">보통</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <p class="scene__conclusion" data-animate>
+        같은 규칙서가 있으니, <strong>누가 질문해도 같은 형식</strong>으로 답해요.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== 씬 4: 실전 — 프롬프트 ===== -->
+  <section class="scene scene--center bg-peach" id="ep2-practice">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>실전: AI에게 이렇게 말하세요</h3>
+      <div class="prompt-block" data-animate>
+        <div class="prompt-block__label">AI에게 복사해서 붙여넣기</div>
+우리 팀에 맞는 CLAUDE.md 규칙서를 만들어주세요.
+
+우리 팀은 [예: 마케팅팀]이고,
+주로 하는 업무는 [예: 광고 문구 작성, 캠페인 기획]입니다.
+
+AI가 답변할 때 지켜야 할 규칙:
+- 사용 언어: 한국어
+- 대상 독자: [예: 비개발자 / 경영진 / 고객]
+- 톤: [예: 친근하게 / 격식있게 / 간결하게]
+- 반드시 포함할 것: [예: 항상 근거를 제시 / 표로 정리 / 3가지 옵션 제시]
+      </div>
+      <div class="prompt-warning">예시 프롬프트는 정답이 아닙니다. 참고만 해주세요. 상세하게 꼼꼼하게 전달할수록 더 좋은 결과물이 생성됩니다.</div>
+      <div class="step-flow" data-stagger style="margin-top: 24px;">
+        <div class="step-card">
+          <div class="step-card__num">→</div>
+          <div class="step-card__content">
+            <div class="step-card__title">결과</div>
+            <div class="step-card__desc"><strong>.claude/CLAUDE.md</strong> 파일이 생겨요. 이후 AI가 이 규칙을 항상 따라요.</div>
+          </div>
+        </div>
+      </div>
+      <div class="tip-box" data-animate>
+        <div class="tip-box__title">💡 처음이라면 3줄로 시작하세요</div>
+        "한국어로 답변해주세요" / "쉽게 설명해주세요" / "비유를 들어주세요"<br>
+        나중에 한 줄씩 추가하면 돼요. [대괄호] 안만 바꾸면 돼요.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 5: 정리 ===== -->
+  <section class="scene scene--center bg-white" id="ep2-summary">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>정리</h3>
+      <div class="quote-card" data-animate>
+        <p>
+          파일 하나 만들었을 뿐인데<br>
+          <strong>AI가 규칙을 따라요.</strong>
+        </p>
+        <p>
+          매번 "한국어로 해줘", "표로 정리해줘" 말할 필요 없이,<br>
+          한 번 적어두면 <strong>알아서 지켜요.</strong>
+        </p>
+      </div>
+      <div class="rule-display" data-animate style="margin-top: 24px; border-color: var(--text-muted);">
+        <div class="rule-display__title">이 편에서 배운 실제 용어</div>
+        <ul class="rule-display__list">
+          <li>고삐 / 규칙서 → <strong>CLAUDE.md</strong> (AI가 매번 읽는 규칙 파일)</li>
+          <li>마구간 서랍 → <strong>.claude/ 폴더</strong> (규칙서가 저장되는 위치)</li>
+        </ul>
+      </div>
+      <p class="scene__conclusion" data-animate>
+        고삐를 채웠더니 방향은 잡혔어요.<br>
+        그런데 매번 출발할 때마다 <strong>"어제 어디까지 했냐면..."</strong> 설명해야 한다면요?
+      </p>
+      <div data-animate style="text-align: center;">
+        <a href="ep3.html" class="next-teaser">
+          <span class="next-teaser__badge">다음 편</span>
+          <span>3편: 출발하면 자동으로 준비돼요 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/scroll.js"></script>
+</body>
+</html>

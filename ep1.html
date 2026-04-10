@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1편: 하네스 엔지니어링이란? — AI 하네스 엔지니어링</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== 상단 네비게이션 바 ===== -->
+  <nav class="top-nav">
+    <a href="index.html" class="top-nav__home">
+      <span class="top-nav__home-arrow">←</span>
+      <span>홈</span>
+    </a>
+    <div class="top-nav__sep"></div>
+    <div class="top-nav__episodes">
+      <a href="ep1.html" class="top-nav__ep top-nav__ep--current">
+        <span class="top-nav__ep-num">1</span>
+        <span>하네스란?</span>
+      </a>
+      <a href="ep2.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">2</span>
+        <span>고삐</span>
+      </a>
+      <a href="ep3.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">3</span>
+        <span>자동 준비</span>
+      </a>
+      <a href="ep4.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">4</span>
+        <span>경로</span>
+      </a>
+      <a href="ep5.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">5</span>
+        <span>전문 마부</span>
+      </a>
+      <a href="ep6.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">6</span>
+        <span>통합</span>
+      </a>
+      <a href="ep7.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">7</span>
+        <span>시작하기</span>
+      </a>
+      <div class="top-nav__sep"></div>
+      <a href="cheatsheet.html" class="top-nav__ep top-nav__ep--cheat"><span>📋</span><span>빠른 참고</span></a>
+    </div>
+  </nav>
+
+  <!-- ===== 키보드 힌트 ===== -->
+  <div class="keyboard-hint">
+    <span class="kbd">←</span><span class="kbd">→</span> 키로 이동
+  </div>
+
+  <!-- ===== 사이드 네비게이션 ===== -->
+  <nav class="progress-nav" aria-label="섹션 네비게이션">
+    <a href="#ep1-title" class="nav-dot active" data-label="1편"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep1-intro" class="nav-dot" data-label="도입"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep1-problem" class="nav-dot" data-label="문제"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep1-definition" class="nav-dot" data-label="정의"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep1-elements" class="nav-dot" data-label="4요소"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep1-philosophy" class="nav-dot" data-label="철학"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep1-tool" class="nav-dot" data-label="도구"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep1-summary" class="nav-dot" data-label="정리"><span></span></a>
+  </nav>
+
+  <!-- ===== 1편 제목 ===== -->
+  <section class="ep-title bg-white" id="ep1-title">
+    <div data-animate>
+      <div class="ep-title__num">1편</div>
+      <h2 class="ep-title__heading">하네스 엔지니어링이란?</h2>
+      <div class="ep-title__progress">
+        <span class="dot filled"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 1: 도입 — AI는 힘 센 말 ===== -->
+  <section class="scene scene--split bg-cream" id="ep1-intro">
+    <div class="scene__inner">
+      <div class="scene__text" data-animate="fade-right">
+        <p class="scene__lead">
+          AI는 힘이 세고 빠른 <strong>말</strong>이에요.
+        </p>
+        <p>
+          질문하면 바로 답하고,<br>
+          복잡한 일도 순식간에 처리해요.
+        </p>
+        <p>
+          하지만 고삐 없이 풀어놓으면<br>
+          <strong>제멋대로 달려요.</strong>
+        </p>
+        <div class="scene__detail">
+          <p>같은 질문을 해도 어제는 3줄, 오늘은 10줄.</p>
+          <p>어제는 표로 정리했는데, 오늘은 글로 풀어써요.</p>
+          <p>팀원 A에게는 격식체, 팀원 B에게는 반말.</p>
+        </div>
+        <p class="scene__punchline">이러면 업무에 쓸 수 없어요.</p>
+      </div>
+      <div class="scene__visual" data-animate="fade-left">
+        <div class="illust illust--warm">
+          <div class="illust__inner">
+            <img src="img/ep1-intro.png" alt="고삐 없이 달리는 말" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 2: 문제 — 실제 업무에서 생기는 일 ===== -->
+  <section class="scene scene--cards bg-peach" id="ep1-problem">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>실제로 이런 일이 생겨요</h3>
+      <div class="card-grid" data-stagger>
+        <div class="problem-card">
+          마케팅팀이 AI에게 광고 문구를 요청했는데,
+          <strong>매번 형식이 달라서</strong> 그대로 쓸 수 없었어요.
+        </div>
+        <div class="problem-card">
+          AI를 켤 때마다
+          <strong>"어제 뭐 했냐면..."</strong> 매번 설명해야 했어요.
+        </div>
+        <div class="problem-card">
+          요청을 접수할 때
+          <strong>빠뜨리는 항목이 매번 달랐어요.</strong>
+        </div>
+        <div class="problem-card">
+          AI에게 "이거 해도 될까?" 물어보면
+          <strong>항상 "좋습니다"만</strong> 해요.
+          위험한 부분은 알아서 안 찾아줘요.
+        </div>
+      </div>
+      <p class="scene__conclusion" data-animate>
+        이 모든 문제의 원인은 하나예요.<br>
+        <strong>말에 마구를 채우지 않았기 때문이에요.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== 씬 3: 정의 — 하네스 엔지니어링 ===== -->
+  <section class="scene scene--split-reverse bg-cream" id="ep1-definition">
+    <div class="scene__inner">
+      <div class="scene__text" data-animate="fade-left">
+        <div class="definition-box">
+          <h3>하네스 엔지니어링</h3>
+          <p>
+            AI에 마구(하네스)를 채워서,<br>
+            우리가 원하는 방향으로,<br>
+            원하는 속도로 달리게 만드는 것
+          </p>
+        </div>
+        <p class="text-note" style="text-align: center;">
+          "하네스(harness)"는 실제로 말에 채우는 마구에서 온 용어예요.<br>
+          고삐, 재갈, 안장, 눈가리개 — 이것들을 합쳐서 하네스라고 불러요.
+        </p>
+        <p class="text-note" style="text-align: center; margin-top: 12px;">
+          이 개념은 HashiCorp 창업자 Mitchell Hashimoto가 처음 이름 붙였어요.<br>
+          <strong>"AI가 실수하면, 그 실수가 다시 생기지 않도록 환경을 만드는 것."</strong><br>
+          지금은 OpenAI, 토스 등 여러 회사에서 사용하는 방법론이 되었어요.
+        </p>
+      </div>
+      <div class="scene__visual" data-animate="fade-right">
+        <div class="illust illust--cool">
+          <div class="illust__inner">
+            <img src="img/ep1-definition.png" alt="마구를 채운 말과 마차" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 4: 4가지 핵심 요소 ===== -->
+  <section class="scene scene--cards bg-white" id="ep1-elements">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>AI에게 채우는 마구 4가지</h3>
+      <div class="card-grid" data-stagger>
+        <div class="element-card">
+          <div class="element-card__icon">🪢</div>
+          <div class="element-card__name">고삐 (규칙서)</div>
+          <div class="element-card__desc">기본 방향과 규칙을 정해요</div>
+          <div class="element-card__metaphor">"왼쪽으로", "천천히"</div>
+        </div>
+        <div class="element-card">
+          <div class="element-card__icon">📋</div>
+          <div class="element-card__name">마구 점검 (자동 브리핑)</div>
+          <div class="element-card__desc">출발할 때 자동으로 상황을 파악해요</div>
+          <div class="element-card__metaphor">매번 출발 전 자동 체크</div>
+        </div>
+        <div class="element-card">
+          <div class="element-card__icon">🗺️</div>
+          <div class="element-card__name">경로 (세트 명령)</div>
+          <div class="element-card__desc">한마디면 정해진 길로 달려요</div>
+          <div class="element-card__metaphor">"A코스!" 한마디로 끝</div>
+        </div>
+        <div class="element-card">
+          <div class="element-card__icon">🧑‍✈️</div>
+          <div class="element-card__name">전문 마부 (전문가 역할)</div>
+          <div class="element-card__desc">관점별 전문가를 배정해요</div>
+          <div class="element-card__metaphor">산길 전문, 야간 전문</div>
+        </div>
+      </div>
+      <p class="scene__conclusion" data-animate>
+        이 4가지를 하나씩 갖추면,<br>
+        <strong>누가 AI에게 질문해도 매번 같은 품질의 답</strong>이 나와요.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== 씬 5: 핵심 철학 ===== -->
+  <section class="scene scene--center bg-butter" id="ep1-philosophy">
+    <div class="scene__inner" data-animate="scale">
+      <div class="quote-card">
+        <h3 class="quote-card__title">한 번에 완성이 아니라 과정이에요</h3>
+        <p>
+          마구를 한 번에 완벽하게 채울 필요는 없어요.<br>
+          고삐 3줄로 시작해서, <strong>달리면서 하나씩 다듬어가면</strong> 돼요.
+        </p>
+        <p>
+          말이 오른쪽으로 치우치면 고삐를 조정하고,<br>
+          속도가 안 맞으면 재갈을 조이듯이.
+        </p>
+        <p>
+          쓰면서 다듬을수록, <strong>나만의 맞춤형 AI</strong>가 만들어져요.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 6: 도구 — Claude Code ===== -->
+  <section class="scene scene--center bg-cream" id="ep1-tool">
+    <div class="scene__inner" data-animate>
+      <h3 class="scene__heading">이 시리즈에서 사용하는 도구</h3>
+      <div class="tool-card">
+        <div class="tool-card__name">Claude Code</div>
+        <p>
+          대화하듯 AI에게 지시하는 도구예요.
+        </p>
+        <p>
+          여기에 마구를 채우는 방법을<br>
+          이 시리즈에서 하나씩 알려드릴게요.
+        </p>
+        <p>
+          직접 만들 필요 없이,<br>
+          AI에게 <strong>"이런 마구를 만들어줘"</strong>라고 말하면 돼요.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 7: 정리 ===== -->
+  <section class="scene scene--center bg-white" id="ep1-summary">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>정리</h3>
+      <div class="compare-grid" data-stagger>
+        <div class="compare-card compare-card--before">
+          <div class="compare-card__icon">🌪️</div>
+          <div class="compare-card__label">마구 없는 말</div>
+          <div class="compare-card__text">
+            매번 다른 형식<br>
+            매번 새로 설명<br>
+            제멋대로
+          </div>
+        </div>
+        <div class="compare-card compare-card--after">
+          <div class="compare-card__icon">🎯</div>
+          <div class="compare-card__label">마구 있는 말</div>
+          <div class="compare-card__text">
+            일관된 품질<br>
+            자동으로 파악<br>
+            원하는 대로
+          </div>
+        </div>
+      </div>
+      <p class="scene__conclusion" data-animate>
+        이 시리즈를 보고 나면, 여러분도 AI에게 마구를 채워서<br>
+        <strong>원하는 대로 달리게 만들 수 있어요.</strong>
+      </p>
+      <div data-animate style="text-align: center;">
+        <a href="ep2.html" class="next-teaser">
+          <span class="next-teaser__badge">다음 편</span>
+          <span>2편: 고삐 하나면 달라져요 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/scroll.js"></script>
+</body>
+</html>

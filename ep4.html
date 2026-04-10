@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4편: 한마디면 알아서 달려요 — AI 하네스 엔지니어링</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== 상단 네비게이션 바 ===== -->
+  <nav class="top-nav">
+    <a href="index.html" class="top-nav__home">
+      <span class="top-nav__home-arrow">←</span>
+      <span>홈</span>
+    </a>
+    <div class="top-nav__sep"></div>
+    <div class="top-nav__episodes">
+      <a href="ep1.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">1</span>
+        <span>하네스란?</span>
+      </a>
+      <a href="ep2.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">2</span>
+        <span>고삐</span>
+      </a>
+      <a href="ep3.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">3</span>
+        <span>자동 준비</span>
+      </a>
+      <a href="ep4.html" class="top-nav__ep top-nav__ep--current">
+        <span class="top-nav__ep-num">4</span>
+        <span>경로</span>
+      </a>
+      <a href="ep5.html" class="top-nav__ep top-nav__ep">
+        <span class="top-nav__ep-num">5</span>
+        <span>전문 마부</span>
+      </a>
+      <a href="ep6.html" class="top-nav__ep top-nav__ep">
+        <span class="top-nav__ep-num">6</span>
+        <span>통합</span>
+      </a>
+      <a href="ep7.html" class="top-nav__ep top-nav__ep">
+        <span class="top-nav__ep-num">7</span>
+        <span>시작하기</span>
+      </a>
+      <div class="top-nav__sep"></div>
+      <a href="cheatsheet.html" class="top-nav__ep top-nav__ep--cheat"><span>📋</span><span>빠른 참고</span></a>
+    </div>
+  </nav>
+
+  <!-- ===== 키보드 힌트 ===== -->
+  <div class="keyboard-hint">
+    <span class="kbd">←</span><span class="kbd">→</span> 키로 이동
+  </div>
+
+  <!-- ===== 사이드 네비게이션 ===== -->
+  <nav class="progress-nav" aria-label="섹션 네비게이션">
+    <a href="#ep4-title" class="nav-dot active" data-label="4편"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep4-intro" class="nav-dot" data-label="도입"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep4-concept" class="nav-dot" data-label="개념"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep4-demo" class="nav-dot" data-label="시연"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep4-practice" class="nav-dot" data-label="실전"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep4-summary" class="nav-dot" data-label="정리"><span></span></a>
+  </nav>
+
+  <!-- ===== 4편 제목 ===== -->
+  <section class="ep-title bg-butter" id="ep4-title">
+    <div data-animate>
+      <div class="ep-title__num">4편</div>
+      <h2 class="ep-title__heading">한마디면 알아서 달려요</h2>
+      <div class="ep-title__progress">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot filled"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 1: 도입 — 매번 다른 지시 ===== -->
+  <section class="scene scene--split bg-butter" id="ep4-intro">
+    <div class="scene__inner">
+      <div class="scene__text" data-animate="fade-right">
+        <p class="scene__lead">
+          요청을 접수할 때마다<br>
+          <strong>빠뜨리는 항목이 달랐어요.</strong>
+        </p>
+        <div class="scene__detail">
+          <p>월요일: 요청팀은 적었는데 마감일을 빼먹음</p>
+          <p>화요일: 마감일은 적었는데 담당자를 빼먹음</p>
+          <p>수요일: 전부 적었는데 우선순위를 안 정함</p>
+        </div>
+        <p class="scene__punchline">
+          마차가 갈림길에 설 때마다<br>
+          <strong>"왼쪽! 아니 오른쪽! 잠깐, 직진!"</strong><br>
+          매번 하나하나 지시하는 것과 같아요.
+        </p>
+      </div>
+      <div class="scene__visual" data-animate="fade-left">
+        <div class="illust illust--warm">
+          <div class="illust__inner">
+            <img src="img/ep4-intro.png" alt="갈림길에서 혼란스러운 지시" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 2: 개념 — 경로 비교 ===== -->
+  <section class="scene scene--cards bg-white" id="ep4-concept">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>경로를 정해두면 한마디로 끝</h3>
+      <div class="compare-grid" data-stagger>
+        <div class="compare-card compare-card--before">
+          <div class="compare-card__icon">😰</div>
+          <div class="compare-card__label">매번 하나하나 지시</div>
+          <div class="compare-card__text">
+            "요청팀 이름 적어줘"<br>
+            "마감일도 넣어줘"<br>
+            "담당자 정해줘"<br>
+            "우선순위 매겨줘"<br>
+            "요약도 해줘"
+          </div>
+        </div>
+        <div class="compare-card compare-card--after">
+          <div class="compare-card__icon">🗺️</div>
+          <div class="compare-card__label">"A코스!" 한마디</div>
+          <div class="compare-card__text">
+            경로가 정해져 있으니<br>
+            <strong>한마디면 알아서</strong><br>
+            순서대로 달려요.<br>
+            빠뜨리는 것도 없어요.
+          </div>
+        </div>
+      </div>
+      <p class="scene__conclusion" data-animate>
+        자주 하는 작업을 <strong>경로(세트 명령)</strong>로 만들어두면,<br>
+        매번 설명할 필요가 없어요.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== 씬 3: 시연 — /접수 실행 ===== -->
+  <section class="scene scene--center bg-butter" id="ep4-demo">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>/접수 한마디로 시작</h3>
+      <div class="prompt-block" data-animate>
+        <div class="prompt-block__label">사용자 입력</div>
+        <pre class="prompt-block__code">/접수</pre>
+      </div>
+      <div class="ai-screen" data-animate style="margin-top:2rem;">
+        <div class="ai-screen__header">AI 자동 실행</div>
+        <div class="ai-screen__body">
+          <p><strong>요청 접수를 시작할게요.</strong></p>
+          <br>
+          <p>1. 요청팀은 어디인가요?</p>
+          <p>2. 어떤 작업을 자동화하고 싶으신가요?</p>
+          <p>3. 마감일이 있나요?</p>
+          <p>4. 현재 이 작업에 얼마나 시간이 걸리나요?</p>
+          <br>
+          <p style="color:#888; font-size:0.9rem;">답변해주시면 요청서를 자동으로 정리해드릴게요.</p>
+        </div>
+      </div>
+      <p class="scene__conclusion" data-animate>
+        입력 한 줄로 AI가 <strong>정해진 순서대로 질문</strong>해요.<br>
+        빠뜨리는 항목이 없어요.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== 씬 4: 실전 — 2단계 워크플로 ===== -->
+  <section class="scene scene--center bg-white" id="ep4-practice">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>실전: 2단계로 경로 만들기</h3>
+      <div class="step-flow" data-stagger>
+        <div class="step-card">
+          <div class="step-card__num">1</div>
+          <div class="step-card__content">
+            <div class="step-card__title">Plan 모드에서 방법 물어보기 <span style="color:var(--text-muted); font-weight:400;">(Shift + Tab)</span></div>
+            <div class="prompt-block" style="margin-top:12px;">
+지난 작업과 문서를 확인해주세요.
+
+아래와 같은 반복 작업을 한 번에 묶어서 자동으로 진행하고 싶습니다:
+1. 요청자에게 필요한 정보를 순서대로 질문
+2. 답변을 정해진 양식으로 정리
+3. 정리한 내용을 문서로 저장
+
+이렇게 반복작업을 묶음으로 자동화하려면
+어떤 방법으로 적용할 수 있는지 방법을 고민하고 알려주세요.
+            </div>
+            <div class="prompt-warning">예시 프롬프트는 정답이 아닙니다. 참고만 해주세요. 상세하게 꼼꼼하게 전달할수록 더 좋은 결과물이 생성됩니다.</div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">2</div>
+          <div class="step-card__content">
+            <div class="step-card__title">방법을 확인하고 실행 맡기기</div>
+            <div class="prompt-block" style="margin-top:12px;">확인했습니다. AI가 기획한 대로 진행해주세요.</div>
+          </div>
+        </div>
+      </div>
+      <p class="scene__conclusion" data-animate>
+        <strong>/접수</strong>만 입력하면 AI가 정해진 경로대로<br>
+        순서대로 질문하고, 정리하고, 저장해요. 매번 같은 품질로.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== 씬 5: 정리 — 4가지 경로 ===== -->
+  <section class="scene scene--cards bg-butter" id="ep4-summary">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>이런 경로들을 만들 수 있어요</h3>
+      <div class="route-grid" data-stagger>
+        <div class="route-item">
+          <div class="route-item__command">/접수</div>
+          <div class="route-item__arrow">→</div>
+          <div class="route-item__result">요청 정리</div>
+        </div>
+        <div class="route-item">
+          <div class="route-item__command">/분석</div>
+          <div class="route-item__arrow">→</div>
+          <div class="route-item__result">기획서</div>
+        </div>
+        <div class="route-item">
+          <div class="route-item__command">/비교</div>
+          <div class="route-item__arrow">→</div>
+          <div class="route-item__result">옵션 비교</div>
+        </div>
+        <div class="route-item">
+          <div class="route-item__command">/확정</div>
+          <div class="route-item__arrow">→</div>
+          <div class="route-item__result">실행 계획</div>
+        </div>
+      </div>
+      <div class="rule-display" data-animate style="margin-top: 24px; border-color: var(--text-muted);">
+        <div class="rule-display__title">이 편에서 배운 실제 용어</div>
+        <ul class="rule-display__list">
+          <li>정해진 경로 → <strong>Skills (스킬)</strong> (미리 정의한 작업 묶음)</li>
+          <li>"A코스!" 한마디 → <strong>Slash Command (/명령어)</strong> (예: /접수, /분석)</li>
+          <li>경로 저장소 → <strong>.claude/commands/ 폴더</strong></li>
+        </ul>
+      </div>
+      <p class="scene__conclusion" data-animate>
+        경로를 만들어두면 <strong>한마디로 복잡한 작업이 시작</strong>돼요.<br>
+        그런데 같은 경로라도 <strong>누가 모느냐</strong>에 따라 결과가 달라진다면요?
+      </p>
+      <div data-animate style="text-align: center;">
+        <a href="ep5.html" class="next-teaser">
+          <span class="next-teaser__badge">다음 편</span>
+          <span>5편: 마부를 바꾸면 길이 달라져요 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/scroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3편: 출발하면 자동으로 준비돼요 — AI 하네스 엔지니어링</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== 상단 네비게이션 바 ===== -->
+  <nav class="top-nav">
+    <a href="index.html" class="top-nav__home">
+      <span class="top-nav__home-arrow">←</span>
+      <span>홈</span>
+    </a>
+    <div class="top-nav__sep"></div>
+    <div class="top-nav__episodes">
+      <a href="ep1.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">1</span>
+        <span>하네스란?</span>
+      </a>
+      <a href="ep2.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">2</span>
+        <span>고삐</span>
+      </a>
+      <a href="ep3.html" class="top-nav__ep top-nav__ep--current">
+        <span class="top-nav__ep-num">3</span>
+        <span>자동 준비</span>
+      </a>
+      <a href="ep4.html" class="top-nav__ep">
+        <span class="top-nav__ep-num">4</span>
+        <span>경로</span>
+      </a>
+      <a href="ep5.html" class="top-nav__ep top-nav__ep">
+        <span class="top-nav__ep-num">5</span>
+        <span>전문 마부</span>
+      </a>
+      <a href="ep6.html" class="top-nav__ep top-nav__ep">
+        <span class="top-nav__ep-num">6</span>
+        <span>통합</span>
+      </a>
+      <a href="ep7.html" class="top-nav__ep top-nav__ep">
+        <span class="top-nav__ep-num">7</span>
+        <span>시작하기</span>
+      </a>
+      <div class="top-nav__sep"></div>
+      <a href="cheatsheet.html" class="top-nav__ep top-nav__ep--cheat"><span>📋</span><span>빠른 참고</span></a>
+    </div>
+  </nav>
+
+  <!-- ===== 키보드 힌트 ===== -->
+  <div class="keyboard-hint">
+    <span class="kbd">←</span><span class="kbd">→</span> 키로 이동
+  </div>
+
+  <!-- ===== 사이드 네비게이션 ===== -->
+  <nav class="progress-nav" aria-label="섹션 네비게이션">
+    <a href="#ep3-title" class="nav-dot active" data-label="3편"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep3-intro" class="nav-dot" data-label="도입"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep3-concept" class="nav-dot" data-label="개념"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep3-demo" class="nav-dot" data-label="시연"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep3-practice" class="nav-dot" data-label="실전"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep3-summary" class="nav-dot" data-label="정리"><span></span></a>
+  </nav>
+
+  <!-- ===== 3편 제목 ===== -->
+  <section class="ep-title bg-sky" id="ep3-title">
+    <div data-animate>
+      <div class="ep-title__num">3편</div>
+      <h2 class="ep-title__heading">출발하면 자동으로 준비돼요</h2>
+      <div class="ep-title__progress">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot filled"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 1: 도입 — 매번 설명하는 귀찮음 ===== -->
+  <section class="scene scene--split bg-sky" id="ep3-intro">
+    <div class="scene__inner">
+      <div class="scene__text" data-animate="fade-right">
+        <p class="scene__lead">
+          AI를 켤 때마다<br>
+          <strong>"어제 마케팅팀 건 어디까지 했냐면..."</strong><br>
+          매번 설명하는 게 귀찮았어요.
+        </p>
+        <div class="scene__detail">
+          <p>월요일: "지난주에 광고 문구 3개 만들었고..."</p>
+          <p>화요일: "어제 만든 거 기억나? 거기서 이어서..."</p>
+          <p>수요일: "처음부터 다시 말해줄게..."</p>
+        </div>
+        <p class="scene__punchline">
+          고삐를 채웠더니 규칙은 지켜요.<br>
+          그런데 여전히 <strong>오늘 어디로 가야 하는지는 몰라요.</strong>
+        </p>
+      </div>
+      <div class="scene__visual" data-animate="fade-left">
+        <div class="illust illust--warm">
+          <div class="illust__inner">
+            <img src="img/ep3-intro.png" alt="매번 같은 설명을 반복하는 피로" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 2: 개념 — 자동 점검 ===== -->
+  <section class="scene scene--split-reverse bg-white" id="ep3-concept">
+    <div class="scene__inner">
+      <div class="scene__visual" data-animate="fade-right">
+        <div class="illust illust--cool">
+          <div class="illust__inner">
+            <img src="img/ep3-concept.png" alt="자동으로 점검하는 마부" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="scene__text" data-animate="fade-left">
+        <p class="scene__lead">
+          출발 전에 마부가 <strong>자동으로 점검</strong>해요.
+        </p>
+        <p>
+          말이 출발하기 전, 마부가 알아서<br>
+          고삐 상태, 안장 높이, 오늘 경로, 짐 목록을 확인해요.
+        </p>
+        <div class="rule-display">
+          <div class="rule-display__title">📋 출발 전 자동 점검</div>
+          <ul class="rule-display__list">
+            <li>고삐 상태: <strong>양호</strong></li>
+            <li>안장 높이: <strong>조정 완료</strong></li>
+            <li>오늘 경로: <strong>동쪽 마을</strong></li>
+            <li>짐: <strong>3건</strong></li>
+          </ul>
+        </div>
+        <p>
+          AI에게도 이렇게 설정해두면,<br>
+          <strong>켜는 순간 알아서 현재 상황을 파악</strong>해요.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 3: 시연 — AI 자동 안내 ===== -->
+  <section class="scene scene--center bg-sky" id="ep3-demo">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>아무것도 입력하지 않았어요</h3>
+      <div class="ai-screen" data-animate>
+        <div class="ai-screen__header">AI 자동 안내</div>
+        <div class="ai-screen__body">
+          <p><strong>현재 진행 중인 작업</strong></p>
+          <p>마케팅팀 광고 문구 자동화</p>
+          <br>
+          <p><strong>지난 작업 요약</strong></p>
+          <p>- 광고 문구 템플릿 3종 완성</p>
+          <p>- A/B 테스트용 변형 2세트 생성</p>
+          <br>
+          <p><strong>다음 단계</strong></p>
+          <p>분석 진행 — 성과 데이터 기반 문구 최적화</p>
+        </div>
+      </div>
+      <p class="scene__conclusion" data-animate>
+        AI를 켰더니 <strong>알아서 현재 상황을 보여줘요.</strong><br>
+        "어제 뭐 했냐면..." 설명할 필요가 없어요.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== 씬 4: 실전 — 3단계 워크플로 ===== -->
+  <section class="scene scene--center bg-white" id="ep3-practice">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>실전: 3단계로 자동 브리핑 만들기</h3>
+      <div class="step-flow" data-stagger>
+        <div class="step-card">
+          <div class="step-card__num">1</div>
+          <div class="step-card__content">
+            <div class="step-card__title">Plan 모드에서 방법 물어보기 <span style="color:var(--text-muted); font-weight:400;">(Shift + Tab)</span></div>
+            <div class="prompt-block" style="margin-top:12px;">
+AI를 실행할 때마다 자동으로 아래 확인내역을 확인할 수 있으면 좋겠습니다.
+어떤 방법이 있는지 알려주세요.
+
+확인하고 싶은 것:
+- 현재 진행 중인 작업 상태
+- 다음에 해야 할 일
+- 오늘 마감인 항목
+            </div>
+            <div class="prompt-warning">예시 프롬프트는 정답이 아닙니다. 참고만 해주세요. 상세하게 꼼꼼하게 전달할수록 더 좋은 결과물이 생성됩니다.</div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">2</div>
+          <div class="step-card__content">
+            <div class="step-card__title">계획서를 문서로 저장</div>
+            <div class="prompt-block" style="margin-top:12px;">위 계획서를 md문서로 생성해주세요.</div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">3</div>
+          <div class="step-card__content">
+            <div class="step-card__title">저장된 문서 기반으로 실행</div>
+            <div class="prompt-block" style="margin-top:12px;">저장된 문서를 보고 진행해주세요.</div>
+          </div>
+        </div>
+      </div>
+      <div class="tip-box" data-animate>
+        <div class="tip-box__title">💡 왜 문서를 먼저 저장하나요?</div>
+        AI가 기억에 의존하지 않고 문서를 보고 작업하므로 실수가 줄어들어요.<br>
+        중단 후에도 "이 문서 보고 이어서 진행해줘"라고 하면 돼요.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 5: 정리 ===== -->
+  <section class="scene scene--center bg-sky" id="ep3-summary">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>정리</h3>
+      <div class="quote-card" data-animate>
+        <p>
+          출발하면 <strong>자동으로 준비돼요.</strong>
+        </p>
+        <p>
+          매번 "어제 뭐 했냐면..." 설명할 필요 없이,<br>
+          AI가 켜지는 순간 <strong>알아서 현재 상황을 파악</strong>해요.
+        </p>
+      </div>
+      <div class="rule-display" data-animate style="margin-top: 24px; border-color: var(--text-muted);">
+        <div class="rule-display__title">이 편에서 배운 실제 용어</div>
+        <ul class="rule-display__list">
+          <li>출발 전 마구 점검 → <strong>Hooks (훅)</strong> (특정 시점에 자동 실행되는 설정)</li>
+          <li>마차에 올라타는 순간 → <strong>SessionStart</strong> (AI 시작 시 발동하는 훅)</li>
+          <li>점검 설정표 → <strong>settings.json</strong> (훅이 정의되는 설정 파일)</li>
+          <li>계획부터 세우기 → <strong>Plan 모드</strong> (Shift + Tab으로 전환)</li>
+        </ul>
+      </div>
+      <p class="scene__conclusion" data-animate>
+        규칙도 잡고, 자동 브리핑도 돼요.<br>
+        그런데 매번 복잡한 요청을 <strong>하나하나 지시</strong>해야 한다면요?
+      </p>
+      <div data-animate style="text-align: center;">
+        <a href="ep4.html" class="next-teaser">
+          <span class="next-teaser__badge">다음 편</span>
+          <span>4편: 한마디면 알아서 달려요 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/scroll.js"></script>
+</body>
+</html>
