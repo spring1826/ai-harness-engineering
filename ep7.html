@@ -73,6 +73,10 @@
     <div class="nav-line"></div>
     <a href="#ep7-iterate" class="nav-dot" data-label="성장"><span></span></a>
     <div class="nav-line"></div>
+    <a href="#ep7-graduate" class="nav-dot" data-label="확장"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#ep7-team" class="nav-dot" data-label="프롬프트"><span></span></a>
+    <div class="nav-line"></div>
     <a href="#ep7-practice" class="nav-dot" data-label="실습"><span></span></a>
     <div class="nav-line"></div>
     <a href="#ep7-summary" class="nav-dot" data-label="마무리"><span></span></a>
@@ -220,7 +224,86 @@
     </div>
   </section>
 
-  <!-- ===== 씬 5: 실습 — 기대와 다를 때 ===== -->
+  <!-- ===== 씬 5: 확장 — 나 혼자에서 팀 전체로 ===== -->
+  <section class="scene scene--split bg-peach" id="ep7-graduate">
+    <div class="scene__inner">
+      <div class="scene__text" data-animate="fade-right">
+        <p class="scene__lead">
+          나만의 마구가 완성됐어요.
+        </p>
+        <p>
+          하지만 이런 고민이 생겨요.
+        </p>
+        <div class="scene__detail">
+          <p>나는 잘 되는데, 옆자리 팀원은 왜 다른 결과가 나오지?</p>
+          <p>내가 없으면 이 AI 설정 누가 관리하지?</p>
+          <p>새로 온 팀원에게 이걸 어떻게 알려주지?</p>
+        </div>
+        <p class="scene__punchline">
+          나 혼자 잘 타는 것과,<br>
+          <strong>마차 회사를 운영하는 건 다른 일</strong>이에요.
+        </p>
+      </div>
+      <div class="scene__visual" data-animate="fade-left">
+        <div class="quote-card">
+          <p>
+            한 필의 말을 잘 모는 마부<br>
+            <span style="font-size: 1.5rem;">↓</span><br>
+            어떤 마부가 와도<br>
+            <strong>안전하게 운행하는 마차 회사</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 6: 팀 프롬프트 — 한 줄이 방향을 바꿔요 ===== -->
+  <section class="scene scene--center bg-white" id="ep7-team">
+    <div class="scene__inner">
+      <h3 class="scene__heading" data-animate>한 줄이 방향을 바꿔요</h3>
+      <div class="compare-grid" data-stagger>
+        <div class="compare-card compare-card--before">
+          <div class="compare-card__icon">🧑</div>
+          <div class="compare-card__label">이렇게 요청하면</div>
+          <div class="compare-card__text">
+            "하네스를 만들어줘"<br><br>
+            → AI가 <strong>"나"</strong>에게 맞춤
+          </div>
+        </div>
+        <div class="compare-card compare-card--after">
+          <div class="compare-card__icon">👥</div>
+          <div class="compare-card__label">이렇게 요청하면</div>
+          <div class="compare-card__text">
+            "<strong>팀원들 모두가 비슷한 퀄리티로</strong><br>
+            결과물을 낼 수 있도록<br>
+            하네스를 만들어줘"<br><br>
+            → AI가 <strong>"조직"</strong>에 맞춤
+          </div>
+        </div>
+      </div>
+      <div class="definition-box" data-animate style="margin-top: 32px;">
+        <p>첫 줄의 프레이밍이<br><strong>AI의 사고 방향을 결정</strong>해요.</p>
+      </div>
+      <div class="prompt-block" data-animate style="margin-top: 24px;">
+        <div class="prompt-block__label">팀 하네스 구축 프롬프트</div>
+        <p>
+팀원들 모두가 비슷한 퀄리티로 결과물을 낼 수 있도록 하네스를 만들고 있어.
+외부에서 바라본 솔루션을 제시해주고,
+그동안 내 글로벌 메모리나 커밋 기록들을 보고 내부자 관점에서도 필요한 걸 제시해줘.
+전체적으로 시간이 오래 걸려도 깊게 분석해서 리포트 해주라
+        </p>
+      </div>
+      <div class="prompt-warning">예시 프롬프트는 정답이 아닙니다. 참고만 해주세요. 상세하게 꼼꼼하게 전달할수록 더 좋은 결과물이 생성됩니다.</div>
+      <div class="tip-box" data-animate style="margin-top: 24px;">
+        <div class="tip-box__title">비유로 이해하기</div>
+        마차 회사를 차렸는데, 사장님이 직접 다 몰 수는 없잖아요.<br>
+        이 프롬프트는 <strong>'마차 운행 매뉴얼'</strong>을 AI에게 만들어달라고 하는 거예요.<br>
+        어떤 마부가 와도 같은 수준으로 운행할 수 있게요.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 씬 7: 실습 — 기대와 다를 때 ===== -->
   <section class="scene scene--center bg-peach" id="ep7-practice">
     <div class="scene__inner">
       <h3 class="scene__heading" data-animate>기대와 다르게 동작할 때</h3>
@@ -249,6 +332,10 @@
         <p>
           고삐 없는 말은 어디로 갈지 모르지만,<br>
           마구를 채운 말은 <strong>매번 같은 곳</strong>으로 가요.
+        </p>
+        <p>
+          그리고 그 마구를 팀에 공유하면,<br>
+          <strong>모든 마부가 같은 곳</strong>으로 갈 수 있어요.
         </p>
         <p>
           <strong>고삐 하나부터 시작해 보세요.</strong>
