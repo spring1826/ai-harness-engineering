@@ -278,10 +278,7 @@ a {
 
 /* 스크롤 안내 */
 .scroll-cue {
-  position: absolute;
-  bottom: 36px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
