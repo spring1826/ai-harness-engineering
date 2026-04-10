@@ -190,6 +190,7 @@
           <div class="step-card__content">
             <div class="step-card__title">Plan 모드에서 필요한 전문가 물어보기 <span style="color:var(--text-muted); font-weight:400;">(Shift + Tab)</span></div>
             <div class="prompt-block" style="margin-top:12px;">
+              <div class="prompt-block__label" style="color: rgba(255,248,240,0.4);">프롬프트</div>
 이런 일들을 할 때 필요한 에이전트, 커맨드, 스킬들이
 무엇이 있을지 고민해보고, 아이디어들을 알려주세요.
             </div>
@@ -197,16 +198,31 @@
           </div>
         </div>
         <div class="step-card">
+          <div class="step-card__num">→</div>
+          <div class="step-card__content">
+            <div class="step-card__title">결과</div>
+            <div class="step-card__desc">AI가 <strong>업무 분석, 위험 평가, 기술 전문가</strong> 등 필요한 전문 마부 목록을 제안해요.</div>
+          </div>
+        </div>
+        <div class="step-card">
           <div class="step-card__num">2</div>
           <div class="step-card__content">
             <div class="step-card__title">확인 후 공식 포맷으로 생성</div>
             <div class="prompt-block" style="margin-top:12px;">
+              <div class="prompt-block__label" style="color: rgba(255,248,240,0.4);">프롬프트</div>
 괜찮은 것 같습니다.
 Claude Code의 agent, command, skill 구조를 조사한 후,
 정확한 포맷을 지켜서 .claude 하위에 만들어주세요.
 Claude Code 최신 공식문서를 확인해서 작업해주세요.
             </div>
             <div class="prompt-warning">예시 프롬프트는 정답이 아닙니다. 참고만 해주세요. 상세하게 꼼꼼하게 전달할수록 더 좋은 결과물이 생성됩니다.</div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">→</div>
+          <div class="step-card__content">
+            <div class="step-card__title">최종 결과</div>
+            <div class="step-card__desc">AI가 전문가별 역할 파일을 만들어줘요. 이후 같은 질문이라도 <strong>어떤 전문가에게 맡기느냐에 따라 다른 관점</strong>의 답이 나와요.</div>
           </div>
         </div>
       </div>

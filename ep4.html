@@ -199,6 +199,7 @@
           <div class="step-card__content">
             <div class="step-card__title">Plan 모드에서 방법 물어보기 <span style="color:var(--text-muted); font-weight:400;">(Shift + Tab)</span></div>
             <div class="prompt-block" style="margin-top:12px;">
+              <div class="prompt-block__label" style="color: rgba(255,248,240,0.4);">프롬프트</div>
 지난 작업과 문서를 확인해주세요.
 
 아래와 같은 반복 작업을 한 번에 묶어서 자동으로 진행하고 싶습니다:
@@ -213,10 +214,26 @@
           </div>
         </div>
         <div class="step-card">
+          <div class="step-card__num">→</div>
+          <div class="step-card__content">
+            <div class="step-card__title">결과</div>
+            <div class="step-card__desc">AI가 <strong>"접수" 경로</strong>를 만드는 계획을 보여줘요. 어떤 질문을 어떤 순서로 할지 정리해줘요.</div>
+          </div>
+        </div>
+        <div class="step-card">
           <div class="step-card__num">2</div>
           <div class="step-card__content">
             <div class="step-card__title">방법을 확인하고 실행 맡기기</div>
-            <div class="prompt-block" style="margin-top:12px;">확인했습니다. AI가 기획한 대로 진행해주세요.</div>
+            <div class="prompt-block" style="margin-top:12px;">
+              <div class="prompt-block__label" style="color: rgba(255,248,240,0.4);">프롬프트</div>
+확인했습니다. AI가 기획한 대로 진행해주세요.</div>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-card__num">→</div>
+          <div class="step-card__content">
+            <div class="step-card__title">최종 결과</div>
+            <div class="step-card__desc">이후 <strong>/접수</strong>만 입력하면 AI가 정해진 순서대로 질문하고, 정리하고, 저장해요.</div>
           </div>
         </div>
       </div>
