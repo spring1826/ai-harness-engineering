@@ -29,23 +29,23 @@
       </a>
       <a href="ep2.html" class="top-nav__ep">
         <span class="top-nav__ep-num">2</span>
-        <span>고삐</span>
+        <span>규칙</span>
       </a>
       <a href="ep3.html" class="top-nav__ep">
         <span class="top-nav__ep-num">3</span>
-        <span>자동 준비</span>
+        <span>자동 점검</span>
       </a>
       <a href="ep4.html" class="top-nav__ep">
         <span class="top-nav__ep-num">4</span>
-        <span>경로</span>
+        <span>명령 세트</span>
       </a>
       <a href="ep5.html" class="top-nav__ep">
         <span class="top-nav__ep-num">5</span>
-        <span>전문 마부</span>
+        <span>전문가</span>
       </a>
       <a href="ep6.html" class="top-nav__ep">
         <span class="top-nav__ep-num">6</span>
-        <span>통합</span>
+        <span>총정리</span>
       </a>
       <a href="ep7.html" class="top-nav__ep">
         <span class="top-nav__ep-num">7</span>
@@ -83,7 +83,7 @@
   <!-- ===== 1편 제목 ===== -->
   <section class="ep-title bg-white" id="ep1-title">
     <div data-animate>
-      <div class="ep-title__num">1편</div>
+      <div class="ep-title__num">1편 하네스란?</div>
       <h2 class="ep-title__heading">하네스 엔지니어링이란?</h2>
       <div class="ep-title__progress">
         <span class="dot filled"></span>
@@ -137,19 +137,23 @@
         <div class="problem-card">
           마케팅팀이 AI에게 광고 문구를 요청했는데,
           <strong>매번 형식이 달라서</strong> 그대로 쓸 수 없었어요.
+          <div class="problem-card__tag">→ 대체 편차 방지</div>
         </div>
         <div class="problem-card">
           AI를 켤 때마다
           <strong>"어제 뭐 했냐면..."</strong> 매번 설명해야 했어요.
+          <div class="problem-card__tag">→ 부적절한 엔지니어링 방지</div>
         </div>
         <div class="problem-card">
           요청을 접수할 때
           <strong>빠뜨리는 항목이 매번 달랐어요.</strong>
+          <div class="problem-card__tag">→ 불완전한 작업 완료 방지</div>
         </div>
         <div class="problem-card">
           AI에게 "이거 해도 될까?" 물어보면
           <strong>항상 "좋습니다"만</strong> 해요.
           위험한 부분은 알아서 안 찾아줘요.
+          <div class="problem-card__tag">→ 부적절한 테스트 방지</div>
         </div>
       </div>
       <p class="scene__conclusion" data-animate>
@@ -201,24 +205,28 @@
           <div class="element-card__name">고삐 (규칙서)</div>
           <div class="element-card__desc">기본 방향과 규칙을 정해요</div>
           <div class="element-card__metaphor">"왼쪽으로", "천천히"</div>
+          <div class="element-card__term">→ CLAUDE.md</div>
         </div>
         <div class="element-card">
           <div class="element-card__icon">📋</div>
           <div class="element-card__name">마구 점검 (자동 브리핑)</div>
           <div class="element-card__desc">출발할 때 자동으로 상황을 파악해요</div>
           <div class="element-card__metaphor">매번 출발 전 자동 체크</div>
+          <div class="element-card__term">→ Hooks</div>
         </div>
         <div class="element-card">
           <div class="element-card__icon">🗺️</div>
           <div class="element-card__name">경로 (세트 명령)</div>
           <div class="element-card__desc">한마디면 정해진 길로 달려요</div>
           <div class="element-card__metaphor">"A코스!" 한마디로 끝</div>
+          <div class="element-card__term">→ Skills</div>
         </div>
         <div class="element-card">
           <div class="element-card__icon">🧑‍✈️</div>
           <div class="element-card__name">전문 마부 (전문가 역할)</div>
           <div class="element-card__desc">관점별 전문가를 배정해요</div>
           <div class="element-card__metaphor">산길 전문, 야간 전문</div>
+          <div class="element-card__term">→ Agents</div>
         </div>
       </div>
       <p class="scene__conclusion" data-animate>
@@ -293,15 +301,13 @@
           </div>
         </div>
       </div>
-      <p class="scene__conclusion" data-animate>
-        이 시리즈를 보고 나면, 여러분도 AI에게 마구를 채워서<br>
-        <strong>원하는 대로 달리게 만들 수 있어요.</strong>
-      </p>
-      <div data-animate style="text-align: center;">
-        <a href="ep2.html" class="next-teaser">
-          <span class="next-teaser__badge">다음 편</span>
-          <span>2편: 고삐 하나면 달라져요 →</span>
-        </a>
+      <div class="next-teaser next-teaser--with-intro" data-animate>
+        <span class="next-teaser__badge">다음 편</span>
+        <p class="next-teaser__intro">
+          이 시리즈를 보고 나면, 여러분도 AI에게 마구를 채워서<br>
+          <strong>원하는 대로 달리게 만들 수 있어요.</strong>
+        </p>
+        <a href="ep2.html" class="next-teaser__link">2편: 고삐 하나면 달라져요 →</a>
       </div>
     </div>
   </section>

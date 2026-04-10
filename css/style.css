@@ -479,6 +479,14 @@ a {
   color: var(--text-secondary);
 }
 
+.problem-card__tag {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(44,36,32,0.06);
+  font-size: 0.8rem;
+  color: var(--lavender);
+}
+
 /* 요소 카드 */
 .element-card {
   text-align: left;
@@ -516,6 +524,14 @@ a {
   font-size: 0.85rem;
   color: var(--text-muted);
   font-style: italic;
+}
+
+.element-card__term {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(44,36,32,0.06);
+  font-size: 0.8rem;
+  color: var(--lavender);
 }
 
 .scene__conclusion {
@@ -710,6 +726,29 @@ a {
   padding: 4px 14px;
   border-radius: 999px;
   white-space: nowrap;
+}
+
+.next-teaser--with-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+  margin-top: 32px;
+}
+
+.next-teaser__intro {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin: 12px 0 16px;
+}
+
+.next-teaser__link {
+  font-weight: 600;
+  color: var(--coral);
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 /* ===== 프롬프트/코드 블록 ===== */
