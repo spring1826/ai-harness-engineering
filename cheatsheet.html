@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>실전 빠른 참고 — AI 하네스 엔지니어링</title>
+  <title>실전 팁 — AI 하네스 엔지니어링</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
       <a href="ep6.html" class="top-nav__ep"><span class="top-nav__ep-num">6</span><span>총정리</span></a>
       <a href="ep7.html" class="top-nav__ep"><span class="top-nav__ep-num">7</span><span>시작하기</span></a>
       <div class="top-nav__sep"></div>
-      <a href="cheatsheet.html" class="top-nav__ep top-nav__ep--cheat top-nav__ep--current"><span>📋</span><span>빠른 참고</span></a>
+      <a href="cheatsheet.html" class="top-nav__ep top-nav__ep--cheat top-nav__ep--current"><span>📋</span><span>실전 팁</span></a>
     </div>
   </nav>
 
@@ -44,11 +44,13 @@
   <nav class="progress-nav" aria-label="섹션 네비게이션">
     <a href="#cheat-title" class="nav-dot active" data-label="시작"><span></span></a>
     <div class="nav-line"></div>
-    <a href="#cheat-evidence" class="nav-dot" data-label="실전 증거"><span></span></a>
-    <div class="nav-line"></div>
     <a href="#cheat-mistakes" class="nav-dot" data-label="실수"><span></span></a>
     <div class="nav-line"></div>
-    <a href="#cheat-tips" class="nav-dot" data-label="꿀팁"><span></span></a>
+    <a href="#cheat-tip1" class="nav-dot" data-label="팁 1"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#cheat-tip2" class="nav-dot" data-label="팁 2"><span></span></a>
+    <div class="nav-line"></div>
+    <a href="#cheat-tip3" class="nav-dot" data-label="팁 3"><span></span></a>
     <div class="nav-line"></div>
     <a href="#cheat-remember" class="nav-dot" data-label="핵심"><span></span></a>
     <div class="nav-line"></div>
@@ -58,63 +60,15 @@
   <!-- ===== 타이틀 ===== -->
   <section class="ep-title bg-butter" id="cheat-title">
     <div data-animate>
-      <div class="ep-title__num">📋 실전 레퍼런스</div>
-      <h2 class="ep-title__heading">빠른 참고</h2>
+      <div class="ep-title__num">📋 실전 팁</div>
+      <h2 class="ep-title__heading">실전 팁</h2>
       <p style="color: var(--text-secondary); font-size: 1.1rem; margin-top: 8px;">
         직접 만들 필요 없어요. AI에게 만들어달라고 하세요.
       </p>
     </div>
   </section>
 
-  <!-- ===== 씬 1: 실전 증거 ===== -->
-  <section class="scene scene--center bg-white" id="cheat-evidence">
-    <div class="scene__inner">
-      <h3 class="scene__heading" data-animate>실전 증거: 프롬프트 4개로 이만큼 나왔어요</h3>
-      <div class="step-flow" data-stagger>
-        <div class="step-card">
-          <div class="step-card__num">1</div>
-          <div class="step-card__content">
-            <div class="step-card__title">"문서를 읽고 프로세스를 기획해줘"</div>
-            <div class="step-card__desc">→ 5가지 방식 비교표 + 3단계 도입안</div>
-          </div>
-        </div>
-        <div class="step-card">
-          <div class="step-card__num">2</div>
-          <div class="step-card__content">
-            <div class="step-card__title">"md문서로 만들어주세요"</div>
-            <div class="step-card__desc">→ 기획서 문서 1개 (231줄)</div>
-          </div>
-        </div>
-        <div class="step-card">
-          <div class="step-card__num">3</div>
-          <div class="step-card__content">
-            <div class="step-card__title">"에이전트, 스킬, 훅을 설계해줘"</div>
-            <div class="step-card__desc">→ 스킬 5개 + 에이전트 3개 + 훅 3개</div>
-          </div>
-        </div>
-        <div class="step-card">
-          <div class="step-card__num">4</div>
-          <div class="step-card__content">
-            <div class="step-card__title">"이 과정을 교육자료로"</div>
-            <div class="step-card__desc">→ 교육 가이드 문서</div>
-          </div>
-        </div>
-      </div>
-      <div class="definition-box" data-animate style="margin-top: 32px;">
-        <h3 style="font-size: 1.4rem;">프롬프트 4개. 타이핑 5분.</h3>
-        <p>결과물: <strong>설계 문서 3개 + 실행 도구 11개</strong></p>
-      </div>
-      <div class="tip-box" data-animate style="margin-top: 24px;">
-        <div class="tip-box__title">🌍 실제 기업들의 숫자</div>
-        <strong>Klarna</strong> — 전 직원 87~90%가 매일 AI 사용, 연간 $40M+ 절감<br>
-        <strong>GitHub Copilot</strong> — 작업 완료 속도 약 55% 향상<br>
-        <strong>한국 기업</strong> — 2025년 AI 교육 투자 1위 영역 (33.7%)<br><br>
-        이 숫자들의 공통점: <strong>AI를 "잘 세팅해서" 쓴 조직</strong>의 결과예요.
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== 씬 2: 자주 하는 실수 3가지 ===== -->
+  <!-- ===== 씬 1: 자주 하는 실수 3가지 ===== -->
   <section class="scene scene--cards bg-butter" id="cheat-mistakes">
     <div class="scene__inner">
       <h3 class="scene__heading" data-animate>자주 하는 실수 3가지</h3>
@@ -141,13 +95,10 @@
     </div>
   </section>
 
-  <!-- ===== 씬 3: 꿀팁 ===== -->
-  <section class="scene scene--center bg-white" id="cheat-tips">
+  <!-- ===== 씬 2: 꿀팁 1 ===== -->
+  <section class="scene scene--center bg-white" id="cheat-tip1">
     <div class="scene__inner">
-      <h3 class="scene__heading" data-animate>꿀팁</h3>
-
-      <!-- 팁 1 -->
-      <div class="quote-card" data-animate style="margin-bottom: 32px;">
+      <div class="quote-card" data-animate>
         <h3 class="quote-card__title">팁 1: 기획서가 나오면 바로 실행하지 마세요</h3>
         <div class="step-flow" style="text-align: left; margin-top: 20px;">
           <div class="step-card">
@@ -179,8 +130,12 @@
           <strong>히스토리 관리</strong> — 언제 무엇을 기획했는지 기록
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- 팁 2 -->
+  <!-- ===== 씬 3: 꿀팁 2 ===== -->
+  <section class="scene scene--center bg-butter" id="cheat-tip2">
+    <div class="scene__inner">
       <div class="quote-card" data-animate>
         <h3 class="quote-card__title">팁 2: 진행 상태를 자동으로 관리하기</h3>
         <p style="text-align: left;">규칙서(CLAUDE.md)에 이 내용을 추가하세요:</p>
@@ -199,8 +154,12 @@
           다음에 AI를 켜면 두 파일을 먼저 읽고 스스로 파악해요.
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- 팁 3 -->
+  <!-- ===== 씬 4: 꿀팁 3 ===== -->
+  <section class="scene scene--center bg-white" id="cheat-tip3">
+    <div class="scene__inner">
       <div class="quote-card" data-animate>
         <h3 class="quote-card__title">팁 3: 팀용 하네스를 만들 때는 첫 줄이 핵심</h3>
         <p style="text-align: left;">하네스를 충분히 익힌 후, 팀 전체가 같은 품질로 결과를 받을 수 있도록 하네스를 구축할 때 이 프롬프트를 사용하세요:</p>
