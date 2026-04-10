@@ -39,15 +39,15 @@
         <span class="top-nav__ep-num">4</span>
         <span>경로</span>
       </a>
-      <a href="ep5.html" class="top-nav__ep top-nav__ep">
+      <a href="ep5.html" class="top-nav__ep">
         <span class="top-nav__ep-num">5</span>
         <span>전문 마부</span>
       </a>
-      <a href="ep6.html" class="top-nav__ep top-nav__ep">
+      <a href="ep6.html" class="top-nav__ep">
         <span class="top-nav__ep-num">6</span>
         <span>통합</span>
       </a>
-      <a href="ep7.html" class="top-nav__ep top-nav__ep">
+      <a href="ep7.html" class="top-nav__ep">
         <span class="top-nav__ep-num">7</span>
         <span>시작하기</span>
       </a>
@@ -153,6 +153,11 @@
         자주 하는 작업을 <strong>경로(세트 명령)</strong>로 만들어두면,<br>
         매번 설명할 필요가 없어요.
       </p>
+      <div class="term-box" data-animate>
+        <div class="term-box__title">실제 용어</div>
+        <p>Claude에서는 이런 경로를 <strong>Skills(스킬)</strong>이라고 불러요.<br>
+        <strong>/명령어(Slash Command)</strong>를 입력하면 바로 실행돼요.</p>
+      </div>
     </div>
   </section>
 
@@ -174,7 +179,7 @@
           <p>3. 마감일이 있나요?</p>
           <p>4. 현재 이 작업에 얼마나 시간이 걸리나요?</p>
           <br>
-          <p style="color:#888; font-size:0.9rem;">답변해주시면 요청서를 자동으로 정리해드릴게요.</p>
+          <p style="color:var(--text-muted); font-size:0.9rem;">답변해주시면 요청서를 자동으로 정리해드릴게요.</p>
         </div>
       </div>
       <p class="scene__conclusion" data-animate>
@@ -247,14 +252,6 @@
           <div class="route-item__arrow">→</div>
           <div class="route-item__result">실행 계획</div>
         </div>
-      </div>
-      <div class="rule-display" data-animate style="margin-top: 24px; border-color: var(--text-muted);">
-        <div class="rule-display__title">이 편에서 배운 실제 용어</div>
-        <ul class="rule-display__list">
-          <li>정해진 경로 → <strong>Skills (스킬)</strong> (미리 정의한 작업 묶음)</li>
-          <li>"A코스!" 한마디 → <strong>Slash Command (/명령어)</strong> (예: /접수, /분석)</li>
-          <li>경로 저장소 → <strong>.claude/commands/ 폴더</strong></li>
-        </ul>
       </div>
       <p class="scene__conclusion" data-animate>
         경로를 만들어두면 <strong>한마디로 복잡한 작업이 시작</strong>돼요.<br>

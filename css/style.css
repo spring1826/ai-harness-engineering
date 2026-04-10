@@ -564,6 +564,30 @@ a {
   line-height: 1.7;
 }
 
+/* 용어 설명 박스 */
+.term-box {
+  margin-top: 12px;
+  padding: 16px 20px;
+  background: var(--lavender-light);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--lavender);
+}
+
+.term-box__title {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  color: var(--lavender);
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+
+.term-box p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
 /* --- 씬: 인용/철학 --- */
 .quote-card {
   background: var(--white);
